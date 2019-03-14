@@ -161,3 +161,11 @@ function createTable (){
 };
 createSelectBox();
 createTable();
+$(document).ready(function(){
+	$("td.yCell").each(function(){
+		$(this).parent("tr").find("td:eq(1)").addClass("greenCell");
+	});
+	$("td.nCell").each(function(){
+		$(this).parent("tr").find("td:eq(1)").addClass("redCell");
+	});
+})
