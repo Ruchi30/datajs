@@ -107,9 +107,9 @@ function createTable(){
 		for(var j=0; j<dataCol.length; j++){
 			var tblCell = dataRow.insertCell(-1);
 			if(data[i][dataCol[j]]==="M"){
-				tblCell.className = 'greenCell';
+				tblCell.className = 'yCell';
 			} else if(data[i][dataCol[j]]==="F"){
-				tblCell.className = 'redCell';
+				tblCell.className = 'nCell';
 			}
 
 			tblCell.innerHTML= data[i][dataCol[j]];
